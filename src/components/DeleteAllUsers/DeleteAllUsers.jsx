@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux"
-import { clearAllUsers } from "../../store/slices/UserSlice";
+import { clearAllUsers } from "../../store/action/action";
 
 const DeleteAllUsers = () => {
 
