@@ -3,6 +3,7 @@ import DeleteAllUsers from '../DeleteAllUsers/DeleteAllUsers';
 import { fakeUserData } from '../../api';
 import { useDispatch } from 'react-redux';
 import { addUser } from '../../store/slices/UserSlice';
+import DisplayUsers from './DisplayUsers';
 
 const UserDetails = () => {
 
@@ -22,14 +23,7 @@ const addNewUser = (payload)=>{
         </button>
       </div>
 
-      <ul className="space-y-3 text-gray-700">
-        <li className="flex items-center justify-between p-3 bg-gray-100 rounded-lg shadow-sm">
-          <span>Shoes</span>
-        </li>
-        <li className="flex items-center justify-between p-3 bg-gray-100 rounded-lg shadow-sm">
-          <span>Pens</span>
-        </li>
-      </ul>
+      <DisplayUsers/>
 
       <hr className="my-6 border-gray-300" />
 
